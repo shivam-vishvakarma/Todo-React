@@ -1,0 +1,31 @@
+.todo-main{
+    width: 60vw;
+    /* background-color: red; */
+    border-radius: 10px;
+    padding: 3%;
+    box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.2);
+}
+
+.todo-main > h2{
+    font-size: 1em;
+    padding: 5px 10px;
+    white-space: nowrap;
+    /* box-shadow: 0 3px 2px -3px rgba(0, 0, 0, 0.2); */
+}
+
+.todo-main > div{
+    padding: 10px 5px;
+    height: 65vh;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px -2px rgba(0, 0, 0, 0.2);
+}
+
+.todo-main > div::-webkit-scrollbar{
+    display: none;
+}
+
+.todo-main > div > h3{
+    font-size: 0.8em;
+    font-weight: 100;
+}

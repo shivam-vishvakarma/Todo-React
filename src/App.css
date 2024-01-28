@@ -9,11 +9,36 @@
 
 :root{
     --primary_color: #4720d5;
+    --first_text_color: #000;
 }
 
 .app{
-    font-size: 10vmin;
-    height: 100dvh;
+    font-size: 5vmin;
     width: 100dvw;
-    overflow: auto;
+    overflow-x: hidden;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--first_text_color);
+    cursor: pointer;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin: 0 2%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:active{
+    box-shadow: none;
+    transform: scale(0.8);
 }

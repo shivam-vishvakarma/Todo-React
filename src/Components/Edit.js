@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Edit.css';
 
 export default function Form({ submit, cancel, item }) {
   const [title, setTitle] = useState(item.title);
@@ -12,7 +13,7 @@ export default function Form({ submit, cancel, item }) {
   }
 
   return (
-    <div>
+    <div className="edit-main">
       <div>
         <h5>
           <input
@@ -26,16 +27,15 @@ export default function Form({ submit, cancel, item }) {
           />
         </h5>
         <p>
-          <input
+          <textarea
             onChange={(elem) => {
               setDesc(elem.target.value);
             }}
             autoFocus
-            type="text"
             placeholder="Description"
             value={desc}
             id="desc"
-          />
+          ></textarea>
         </p>
         <button onClick={onSubmit}>
           Save

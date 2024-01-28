@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Todos from "./Todos";
 import SideBar from "./SideBar";
+import './Home.css'
 
 export default function Home() {
   let storage;
@@ -79,8 +80,9 @@ export default function Home() {
     setTodos([item, ...todos]);
   };
   return (
-    <>
+    <main>
       <div>
+        <SideBar submit={submit} />
         <Todos
           items={todos}
           onDel={onDel}
@@ -88,8 +90,7 @@ export default function Home() {
           onCancel={onCancel}
           onEditSubmit={onEditSubmit}
         />
-        <SideBar submit={submit} />
       </div>
-    </>
+    </main>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './SideBar.css'
 
 export default function SideBar({submit}) {
   const [title, setTitle] = useState('');
@@ -12,7 +13,8 @@ export default function SideBar({submit}) {
     e.preventDefault();
   }
   return (
-    <div>
+    <div className="side">
+      <h2>Add To-Do</h2>
       <form onSubmit={onSubmit}>
         <div>
           <label htmlFor="title">
@@ -31,14 +33,21 @@ export default function SideBar({submit}) {
           <label htmlFor="desc">
             Description
           </label>
-          <input
+          <textarea 
+            id="desc"
+            value={desc}
+            onChange={(elem)=>{
+              setDesc(elem.target.value);
+            }}>
+          </textarea>
+          {/* <input
             type="text"
             value={desc}
             onChange={(elem) => {
               setDesc(elem.target.value);
             }}
             id="desc"
-          />
+          /> */}
         </div>
         <button
           type="submit"

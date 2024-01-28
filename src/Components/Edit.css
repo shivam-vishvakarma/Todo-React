@@ -1,0 +1,42 @@
+.edit-main{
+    padding: 3px;
+    width: 70%;
+}
+
+.edit-main>div{
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 7px;
+    border-radius: 10px;
+    /* background-color: var(--edit-bg-color); */
+}
+
+.edit-main > div > h5 > input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 0.7em;
+    font-weight: 300;
+    border-radius: 3px;
+    margin: 2%;
+    padding: 2px 5px;
+    box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.edit-main > div > p > textarea{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 3px;
+    min-width: 250px;
+    min-height: 40px;
+    resize: none;
+    padding: 0 5px;
+    font-size: 0.5em;
+    margin: 2%;
+    font-weight: 100;
+    box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.edit-main > div > p > textarea::-webkit-scrollbar{
+    display: none;
+}

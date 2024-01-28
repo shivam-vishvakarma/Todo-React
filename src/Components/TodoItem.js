@@ -1,8 +1,9 @@
 import React from "react";
+import './TodoItem.css';
 
 export default function TodoItem({data, onDel, onEdit}) {
   return (
-    <div>
+    <div className="todoitem-main">
       <div>
         <h5>{data.title?data.title:"Card title"}</h5>
         <p>

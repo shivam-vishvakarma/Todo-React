@@ -8,7 +8,7 @@ import './App.css'
 function App() {
   return (
     <div className="app">
-      <Header title={"Todo Wala"} />
+      <Header title={"To-Do Wala"} />
       <Routes>
         <Route exact path="/" Component={Home} />
         <Route exact path="/about" Component={About} />
